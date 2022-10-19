@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="background-color: #7fffd4">
+    <head>
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <title>Задание 5 - Савинцев Вадим</title>
+    <link rel="styleshhet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <header id="текст">
+        <a>Калькулятор стоимости кружек</a>
+    </header>
+    <form>
+        Введите количество кружек:
+        <input name="proz2" type="text" placeholder="Кол-во">
+        <div id="result">
+    </form>
+    <div id="myprozprice">Выберите тип кружек</div>
+    Тип кружек:
+    <form>
+        <select name="myselectname">
+            <option value="1">Стеклянные: 100 руб.</option>
+            <option value="2">Керамические: 150 руб.</option>
+            <option value="3">Фарфоровые: 200 руб.</option>
+        </select>
+        <div class="myradios" id="myradios">
+            <label><input type="radio" name="prozoptions" value="option1">С блюдцем: 15 руб.</label>
+            <label><input type="radio" name="prozoptions" value="option2">С изображением: 20 руб.</label>
+        </div>
+    </form>
+    <button id="my-button" onclick="proz">Посчитать</button>
+</div>
+</body>
+<footer>(c) Савинцев Вадим 2022</footer>
+</html>
