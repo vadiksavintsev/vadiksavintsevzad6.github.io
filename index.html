@@ -3,9 +3,8 @@
     <head>
     <meta name="viewport" content="width-device-width, initial-scale=1"/>
     <title>Задание 5 - Савинцев Вадим</title>
-    <link rel="styleshhet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css"/>
-    <script src="calculator.js" defer></script>
+    <script src="calculator.js"></script>
 </head>
 <body>
     <header id="текст">
@@ -13,19 +12,20 @@
     </header>
     <form>
         Введите количество кружек:
-        <input id="count" type="text" value="" placeholder="Кол-во" onKeyPress="cifra()">
+        <input id="count" type="text" value="" placeholder="Кол-во" onKeyPress="cislo()">
     </form>
-    <div id="myprozprice">Выберите тип кружек</div>
+    <div>Выберите тип кружек</div>
     Тип кружек:
     <form>
-        <select name="types">
+        <select name="prodType">
             <option value="1">Стеклянные: 100 руб.</option>
             <option value="2">Керамические: 150 руб.</option>
             <option value="3">Фарфоровые: 200 руб.</option>
         </select>
         <div id="radios">
-            <label><input type="radio" name="prozoptions" value="option1">С блюдцем: 15 руб.</label>
-            <label><input type="radio" name="prozoptions" value="option2">С изображением: 20 руб.</label>
+            <label><input type="radio" name="prodOptions" value="option1">С блюдцем: 15 руб.</label>
+            <label><input type="radio" name="prodOptions" value="option2">С изображением: 20 руб.</label>
+            <label><input type="radio" name="prodOptions" value="option3">Вместе: 35 руб.</label>
         </div>
         <div id="checkboxes">
           <label><input type="checkbox" name="prop1">Костяной: 30 руб.</label>
@@ -33,6 +33,5 @@
         </div>
     </form>
     <div id="prodPrice"></div>
-</div>
 </body>
 </html>
